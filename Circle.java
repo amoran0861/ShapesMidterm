@@ -25,7 +25,17 @@ public class Circle
         xPosition = 230;
         yPosition = 90;
         color = Canvas.getColor("blue");
+        makeVisible();
     }    
+    
+    public Circle(int initDiameter, int x, int y, String initColor)
+    {
+        diameter = initDiameter;
+        xPosition = x;
+        yPosition = y;
+        color = Canvas.getColor(initColor);
+        makeVisible();
+    }  
     
     /**
      * Make this circle visible. If it was already visible, do nothing.

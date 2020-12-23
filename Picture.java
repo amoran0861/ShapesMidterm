@@ -19,8 +19,15 @@ public class Picture {
         pic.setBackgroundColor("white");
 
         // Draw my picture
-        Circle c = new Circle();
-        c.makeVisible();
+        Rect a = new Rect(800, 80, 0, 520, "green");
+        Rect b = new Rect(800, 520, 0, 0, "cyan");
+        Arc c = new Arc(400, 30, 320, 0, 180, "red");
+        Arc d = new Arc(380, 40, 330, 0, 180, "yellow");
+        Arc e = new Arc(360, 50, 340, 0, 180, "green");
+        Arc f = new Arc(340, 60, 350, 0, 180, "blue");
+        Arc g = new Arc(320, 70, 360, 0, 180, "magenta");
+        Arc h = new Arc(300, 80, 370, 0, 180, "cyan");
+       
 
         // Get the filename to save to from the command line arguments, defaulting to
         // MyPicture.png if no argument is given
@@ -33,12 +40,12 @@ public class Picture {
         }
 
         // Save the picture to a file
-        try {
-            pic.saveToFile(new File(filename));
-            System.out.println("Picture saved to " + filename);
-        } catch (IOException e) {
-            System.err.println(e);
-            System.err.println("Could not save file.");
-        }
+        //try {
+        //    pic.saveToFile(new File(filename));
+        //    System.out.println("Picture saved to " + filename);
+        //} catch (IOException e) {
+        //    System.err.println(e);
+        //    System.err.println("Could not save file.");
+        //}
     }
 }

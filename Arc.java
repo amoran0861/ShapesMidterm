@@ -29,6 +29,18 @@ public class Arc
         startAngle = 30;
         extent = 120;
         color = Canvas.getColor("magenta");
+        makeVisible();
+    }
+    
+    public Arc(int initDiameter, int x, int y, int angle, int initExtent, String initcolor)
+    {
+        diameter = initDiameter;
+        xPosition = x;
+        yPosition = y;
+        startAngle = angle;
+        extent = initExtent;
+        color = Canvas.getColor(initcolor);
+        makeVisible();
     }
     
     /**
@@ -41,26 +53,26 @@ public class Arc
      * @param color the name of the color for the Arc
      * @param visible true displays the Arc on the canvas
      */
-    public Arc(int x, int y, int diameter, int arcStartAngle, int arcEndAngle, 
-                String color, boolean visible){
-        xPosition = x;
-        yPosition = y;
-        
-        this.diameter = diameter;
-        this.startAngle = arcStartAngle;
-        
-        extent = arcEndAngle - arcStartAngle;
-        extent %= 360;
-        if (extent < 0) {
-            extent += 360;
-        }
-        
-        this.color = Canvas.getColor(color);
-        
-        if (visible) {
-            makeVisible();
-        }
-    }
+    //public Arc(int x, int y, int diameter, int arcStartAngle, int arcEndAngle, 
+    //            String color, boolean visible){
+    //    xPosition = x;
+    //    yPosition = y;
+    //    
+    //    this.diameter = diameter;
+    //    this.startAngle = arcStartAngle;
+    //    
+    //    extent = arcEndAngle - arcStartAngle;
+    //    extent %= 360;
+    //    if (extent < 0) {
+    //        extent += 360;
+    //    }
+    //    
+    //    this.color = Canvas.getColor(color);
+    //    
+    //    if (visible) {
+    //        makeVisible();
+    //    }
+    //}
     
     /**
      * Make this arc visible. If it was already visible, do nothing.

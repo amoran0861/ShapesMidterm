@@ -27,7 +27,17 @@ public class Triangle
         xPosition = 210;
         yPosition = 140;
         color = Canvas.getColor("green");
-        isVisible = false;
+        makeVisible();
+    }
+    
+    public Triangle(int initHeight, int initWidth, int x, int y, String initColor)
+    {
+        height = initHeight;
+        width = initWidth;
+        xPosition = x;
+        yPosition = y;
+        color = Canvas.getColor(initColor);
+        makeVisible();
     }
     
     /**

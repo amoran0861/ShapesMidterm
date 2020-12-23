@@ -27,7 +27,17 @@ public class Rect
         xPosition = 310;
         yPosition = 120;
         color = Canvas.getColor("red");
-        isVisible = false;
+        makeVisible();
+    }
+    
+    public Rect(int initxSize, int initySize, int x, int y, String initColor)
+    {
+        xSize = initxSize;
+        ySize = initySize;
+        xPosition = x;
+        yPosition = y;
+        color = Canvas.getColor(initColor);
+        makeVisible();
     }
 
     /**
