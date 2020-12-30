@@ -27,7 +27,12 @@ public class Picture {
         Arc f = new Arc(340, 60, 350, 0, 180, "blue");
         Arc g = new Arc(320, 70, 360, 0, 180, "magenta");
         Arc h = new Arc(300, 80, 370, 0, 180, "cyan");
-       
+        Rect i = new Rect(60, 100, 600, 420, "brown");
+        Triangle j = new Triangle(80, 200, 630, 340, "green");
+        Triangle k = new Triangle(60, 150, 630, 300, "green");
+        Triangle l = new Triangle(40, 100, 630, 270, "green");
+        Circle m = new Circle(75, 650, 55, "yellow");
+        
 
         // Get the filename to save to from the command line arguments, defaulting to
         // MyPicture.png if no argument is given
