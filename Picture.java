@@ -32,6 +32,9 @@ public class Picture {
         Triangle k = new Triangle(60, 150, 630, 300, "green");
         Triangle l = new Triangle(40, 100, 630, 270, "green");
         Circle m = new Circle(75, 650, 55, "yellow");
+        Cloud n = new Cloud(135, 70, 5, 90);
+        
+        
         
 
         // Get the filename to save to from the command line arguments, defaulting to
