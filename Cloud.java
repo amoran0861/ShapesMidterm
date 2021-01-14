@@ -25,6 +25,7 @@ public class Cloud
         } else {
             color = "white";
         }
+        //Draw Cloud
         while (i != count){
             new Circle(size, tempx, y, color);
             i = i + 1;
