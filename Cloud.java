@@ -19,22 +19,28 @@ public class Cloud
         int k = 0;
         int tempx = x;
         int tempy = y;
+        String color; 
+        if (((int)(Math.random() * (8)) == 1)) {
+            color = "light grey";
+        } else {
+            color = "white";
+        }
         while (i != count){
-            new Circle(size, tempx, y, "white");
+            new Circle(size, tempx, y, color);
             i = i + 1;
             tempx = tempx + size/2;
         }
         tempx = x + size/2;
         tempy = y + size/2;
         while (j != count - 2){
-            new Circle(size, tempx, tempy, "white");
+            new Circle(size, tempx, tempy, color);
             j = j + 1;
             tempx = tempx + size/2;
         }
         tempx = x + size/2;
         tempy = y - size/2;
         while (k != count - 2){
-            new Circle(size, tempx, tempy, "white");
+            new Circle(size, tempx, tempy, color);
             k = k + 1;
             tempx = tempx + size/2;
         }

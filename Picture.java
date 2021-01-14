@@ -48,12 +48,12 @@ public class Picture {
         }
 
         // Save the picture to a file
-        //try {
-        //    pic.saveToFile(new File(filename));
-        //    System.out.println("Picture saved to " + filename);
-        //} catch (IOException e) {
-        //    System.err.println(e);
-        //    System.err.println("Could not save file.");
-        //}
+        try {
+            pic.saveToFile(new File(filename));
+            System.out.println("Picture saved to " + filename);
+        } catch (IOException ex) {
+            System.err.println(ex);
+            System.err.println("Could not save file.");
+        }
     }
 }
